@@ -1,7 +1,29 @@
 aid: neptune-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/neptune-networks.png
 name: Neptune Networks
-description: Neptune Networks is a company surfaced as a portfolio company of anthemis and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Neptune Networks operates Neptune, an institutional fixed-income pre-trade
+  data platform that delivers real-time dealer axes and bond inventory directly
+  into buy-side workflows. Aggregating structured data from 34 global banks,
+  the network surfaces roughly 110k bonds per day at around $2.2T daily gross
+  notional across 33 currencies, helping asset managers identify liquidity
+  opportunities before they trade. Originally an independent, bank-owned utility
+  backed by Anthemis, Neptune is now operated as RealQ, the data-solutions arm
+  of Liquidnet Fixed Income (part of TP ICAP Group). Connectivity is
+  institutional and permissioned - a browser web app, OMS/EMS integrations, FIX,
+  a REST API, FTP/SSH drop copy, and AWS cloud data transfer - with no public
+  developer portal, published OpenAPI, or open SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/neptune-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fixed Income
+- Capital Markets
+- Fintech
+- Market Data
+- Pre-Trade
+- Bonds
+- Liquidity
 apis: []
+common:
+- type: DomainSecurity
+  url: security/neptune-networks-domain-security.yml
+- type: Website
+  url: https://realqmarkets.com/neptune
+- type: Website
+  url: https://neptunefi.com
+- type: Login
+  url: https://realqmarkets.com/member-login
+- type: Support
+  url: https://realqmarkets.com/contact
+- type: TermsOfService
+  url: https://tpicap.com/tpicap/website-terms-of-use
+- type: PrivacyPolicy
+  url: https://tpicap.com/tpicap/privacy-notice
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1

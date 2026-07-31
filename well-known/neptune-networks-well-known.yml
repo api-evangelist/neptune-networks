@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of https://realqmarkets.com/.well-known/* (neptunefi.com 301 -> realqmarkets.com/neptune)
+name: Neptune Networks well-known probe
+description: >-
+  Neptune Networks (operated as RealQ / Liquidnet Fixed Income) publishes no
+  public well-known discovery documents. The institutional platform is
+  permissioned and sits behind authentication; the public web presence is a
+  marketing redirect. All standard well-known paths returned 404. Absence is
+  valid, expected data for a private institutional data network.
+host: realqmarkets.com
+probes:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /llms.txt
+  status: 404
+  file: null
